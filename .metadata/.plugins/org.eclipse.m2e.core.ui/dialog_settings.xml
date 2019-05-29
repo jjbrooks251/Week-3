@@ -3,10 +3,16 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.qa"/>
+			<item value="com.ba"/>
+			<item value="Selenium"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="YouDraw"/>
+			<item value="DemoSite"/>
+			<item value="Selenium"/>
+			<item value="com.ba"/>
 			<item value="BlackJack"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -46,6 +52,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Admin\eclipse-workspace\Selenium"/>
 			<item value="C:\Users\Admin\eclipse-workspace\MavenDemo"/>
 		</list>
 		<list key="projectNameTemplate">

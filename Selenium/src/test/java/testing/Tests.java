@@ -32,7 +32,8 @@ public class Tests {
 //			e.printStackTrace();
 //		}
 		bar.sendKeys("cute kittens");
-		bar.sendKeys(Keys.ENTER);
+		//bar.sendKeys(Keys.ENTER);
+		bar.submit();
 		
 		WebElement images = driver.findElement(By.xpath("//*[@id=\"hdtb-msb-vis\"]/div[2]/a"));
 		images.click();
