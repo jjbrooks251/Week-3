@@ -1,0 +1,59 @@
+package com.qa.blackjack.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.qa.blackjack.main.BlackJack;
+
+public class UnitTests {
+		static BlackJack blackjack;
+		
+		
+		
+	@BeforeClass
+	public static void setup() {
+		blackjack = new BlackJack();	
+	}
+		
+		
+	@Test
+	public void test1(){
+		assertEquals("Invalid",blackjack.play(0,0));
+			
+	}
+	
+	@Test
+	public void test2() {
+		assertEquals("dealer", blackjack.play(0,21));
+	}
+	
+	@Test
+	public void test3() {
+		assertEquals("player", blackjack.play(21,0));
+	}
+	
+	@Test
+	public void test4() {
+		assertEquals("Invalid", blackjack.play(10,10));
+	}
+	
+	@Test
+	public void test5() {
+		assertEquals("both bust", blackjack.play(30,22));
+	}
+	
+	@Test
+	public void test6() {
+		assertEquals("player", blackjack.play(21,30));
+	}
+	
+	@Test
+	public void test7() {
+		assertEquals("Invalid", blackjack.play(0, 30));
+	}
+	
+	
+	
+}

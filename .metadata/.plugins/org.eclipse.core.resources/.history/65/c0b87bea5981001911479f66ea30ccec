@@ -1,0 +1,51 @@
+package com.qa.blackjack.main;
+
+public class BlackJack {
+
+		public static void main(String[] args) {
+					
+		}
+		
+		public String play(int player, int dealer) {
+			
+			do {
+				dealer = dealTwist(dealer);
+			} while(dealer <16 && player>3);
+			
+			do {
+				player = dealPlayer(player);
+			} while(player <16 && player>3);
+			
+			
+			if (player <4 || dealer < 4) {
+				return "Invalid";
+			} else if (player >30 || dealer >30) {
+				return "Invalid";
+			} else if (player >21 && dealer >21 && player <31 && dealer <31) {
+				return "both bust";	
+			}else if (player > dealer || dealer > 21 && dealer<=30) {
+				return "player";
+				
+				
+			} else if (dealer <16 || dealer >21) {
+				return "Invalid";
+			
+						
+			} else if (player <= dealer) {
+				return "dealer";
+			} else 
+				return "Invalid";
+					
+		}
+		
+		public int dealTwist(int value) {
+			
+			
+			return value;
+		}
+		
+		
+	
+
+	
+}

@@ -1,0 +1,15 @@
+package com.qa.blackjack.tests;
+
+import org.junit.Test;
+
+public class UnitTests {
+
+	@Test
+	public void test1(){
+		assertEquals(0,0);
+		
+		
+	}
+	
+	
+}

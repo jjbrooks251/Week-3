@@ -1,0 +1,124 @@
+package com.qa.blackjack.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.qa.blackjack.main.BlackJack;
+
+public class UnitTests {
+		static BlackJack blackjack;
+		
+		
+		
+	@BeforeClass
+	public static void setup() {
+		blackjack = new BlackJack();	
+	}
+		
+		
+	@Test
+	public void test1(){
+		assertEquals("Invalid",blackjack.play(0,0));
+			
+	}
+	
+	@Test
+	public void test2() {
+		assertEquals("Invalid", blackjack.play(0,21));
+	}
+	
+	@Test
+	public void test3() {
+		assertEquals("Invalid", blackjack.play(21,0));
+	}
+	
+	@Test
+	public void test4() {
+		assertEquals("Invalid", blackjack.play(10,11));
+	}
+	
+	@Test
+	public void test5() {
+		assertEquals("both bust", blackjack.play(30,22));
+	}
+	
+	@Test
+	public void test6() {
+		assertEquals("player", blackjack.play(21,30));
+	}
+	
+	@Test
+	public void test7() {
+		assertEquals("Invalid", blackjack.play(0, 30));
+	}
+	
+	@Test
+	public void test8() {
+		assertEquals("Invalid", blackjack.play(25, 12));
+	}
+	
+	@Test
+	public void test9() {
+		assertEquals("player", blackjack.play(10, 25));
+	}
+	
+	@Test
+	public void test10() {
+		assertEquals("both bust", blackjack.play(25, 25));
+	}
+	
+	@Test
+	public void test11() {
+		assertEquals("dealer", blackjack.play(10, 21));
+	}
+	
+	@Test
+	public void test12() {
+		assertEquals("Invalid", blackjack.play(21, 13));
+	}
+	
+	@Test
+	public void test13() {
+		assertEquals("Invalid", blackjack.play(31, 31));
+	}
+	
+	@Test
+	public void test14() {
+		assertEquals("Invalid", blackjack.play(1, 1));
+	}
+	
+	@Test
+	public void test15() {
+		assertEquals("Invalid", blackjack.play(10, 31));
+	}
+	
+	@Test
+	public void test16() {
+		assertEquals("Invalid", blackjack.play(10, 1));
+	}
+	
+	@Test
+	public void test17() {
+		assertEquals("Invalid", blackjack.play(31, 14));
+	}
+	
+	@Test
+	public void test18() {
+		assertEquals("dealer", blackjack.play(30, 15));
+	}
+	
+	@Test
+	public void test19() {
+		assertEquals("Invalid", blackjack.play(1, 9));
+	}
+	
+	@Test
+	public void test20() {
+		assertEquals("Invalid", blackjack.play(4, 8));
+	}
+
+	
+	
+}

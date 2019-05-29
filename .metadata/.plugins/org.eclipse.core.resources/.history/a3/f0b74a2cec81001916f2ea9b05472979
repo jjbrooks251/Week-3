@@ -1,0 +1,21 @@
+package testing;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.qa.blackjack.main.BlackJack;
+
+public class Tests {
+
+	
+	@BeforeClass
+	public static void setup() {
+		blackjack = new BlackJack();	
+	}
+	
+	@Test
+	public void test1(){
+	
+			
+	}
+}

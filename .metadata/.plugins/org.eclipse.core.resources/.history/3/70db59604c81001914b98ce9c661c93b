@@ -1,0 +1,18 @@
+package com.qa.blackjack.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UnitTests {
+		BlackJack blackjack;
+		
+	@Test
+	public void test1(){
+		assertEquals(0,blackjack.play(0,0));
+		
+		
+	}
+	
+	
+}
