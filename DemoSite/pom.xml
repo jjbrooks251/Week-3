@@ -5,22 +5,48 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.14.0</version>
-</dependency>
-
-<dependency>
-<groupId>junit</groupId>
+  <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+    	<groupId>junit</groupId>
    		<artifactId>junit</artifactId>
     	<version>4.12</version>
     	<scope>test</scope>
+	</dependency>  
+	
+	<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17</version>
 </dependency>
   
+
+  <dependency>
+   <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.14.0</version>
+</dependency>
+	  
   </dependencies>
   
+  <properties>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+ <build>
+ <plugins>
+ <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-site-plugin</artifactId>
+  <version>3.7.1</version>
+</plugin>
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-project-info-reports-plugin</artifactId>
+  <version>3.0.0</version>
+</plugin>
+ </plugins>
+ </build>
   
   
   

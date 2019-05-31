@@ -9,6 +9,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ApacheTest"/>
 			<item value="YouDraw"/>
 			<item value="DemoSite"/>
 			<item value="Selenium"/>
